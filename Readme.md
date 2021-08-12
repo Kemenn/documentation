@@ -63,7 +63,7 @@ When kemenn server is started, fonctionnement files are stored in /tmp/kemenn.
 | out.log  | The standard logs |
 | err.log  | The error logs |
 
-*: This file is edited by "kemenn" command ([read doc](#https://github.com/Kemenn/srv-kemenn#command-interface)). But you can use it at the hand with the best syntax.
+*: This file is edited by "kemenn" command ([read doc](https://github.com/Kemenn/srv-kemenn#command-interface)). But you can use it at the hand with the best syntax.
 
 The configurations files are stored in */etc/kemenn*. The .ini files is configure by [web interface](https://github.com/Kemenn/srv-kemenn#web-interface). "*kemenn*" file need [configure at the hand](https://github.com/Kemenn/srv-kemenn#configuration), and need restart of kemenn service.
 
