@@ -2,6 +2,10 @@
 
 This is the technical documentation for the server and client fonctionnement.
 
+For the client usage, [see her documentation](https://github.com/Kemenn/clt-kemenn#kemenn-client).
+
+For the server usage, [see also her documentation](https://github.com/Kemenn/srv-kemenn#kemenn-server).
+
 - [DESCRIPTION](#description)
 - [SERVER](#server)
 - [MESSAGES](#message)
@@ -62,11 +66,11 @@ When kemenn server is started, fonctionnement files are stored in /tmp/kemenn.
 | out.log  | The standard logs |
 | err.log  | The error logs |
 
-*: This file is edited by "kemenn" command ([read doc](https://github.com/Kemenn/srv-kemenn#command-interface)). But you can use it at the hand with the best syntax.
+*: This file is edited by "kemenn" command ([read doc](https://github.com/Kemenn/srv-kemenn#command-interface)). But you can use it at the hand with the best syntax (see the shell script /usr/bin/kemenn).
 
 The configurations files are stored in */etc/kemenn*. The .ini files is configure by [web interface](https://github.com/Kemenn/srv-kemenn#web-interface). "*kemenn*" file need [configure at the hand](https://github.com/Kemenn/srv-kemenn#configuration), and need restart of kemenn service.
 
-The installations files are stored in /usr/share/kemenn.
+The program files are installed in a very original way in the folder : /usr/share/kemenn.
 
 #### Logs
 
@@ -81,7 +85,7 @@ There is 2 files for logs :
 
 `m[] '' → Information message from the server`
 
-`a[] '' → message sent for Action`
+`a[] '' → message sent for Action on clients`
 
 
 
