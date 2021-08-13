@@ -1,4 +1,5 @@
 # Kemenn
+![Logo](./logo/logo_128x128.png)
 
 This is the technical documentation for the server and client fonctionnement.
 
