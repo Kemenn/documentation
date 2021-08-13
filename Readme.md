@@ -25,11 +25,13 @@ The client is made in 4 parts :
 
  - There is a service that **manages the connection** to the alert server. It works in parallel in a completely autonomous way.
 
- - There is the **shortcut detector**. It listens to the keyboard to detect the double press of the F12 key (by default). When the key has been pressed twice in a row, an alert is sent.
+ - There is the **shortcut detector**. It listens to the keyboard to detect the double press of the F12 key (by default). When the key has been pressed twice in a row, an alert is sent. It works in parallel in a completely autonomous way.
 
  - There is the **message manager**. As soon as a message is received, it processes it (answer to the server, display a window with a message, send an alert).
 
- - There is the **displayer**. It is responsible for displaying a window in a non-blocking way.
+ - There is the **displayer**. It is responsible for displaying a window in a non-blocking way. The window is update by the main thread in the message manager. The displayer depend of it !
+ 
+The **main** file launches the parts one after the other (connection, shortcuts, message manager) by checking that they are correctly started. It also stops them, restarts them if necessary, and notifies the users. It is the conductor.
  
 #### Client use case diagram
 ![The use case diagram](./french_use_case_diagram_client.png)
