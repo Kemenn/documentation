@@ -4,7 +4,6 @@ This is the technical documentation for the server and client fonctionnement.
 
 - [DESCRIPTION](#description)
 - [SERVER](#server)
-- [CLIENT](#client)
 - [MESSAGES](#message)
 
 
