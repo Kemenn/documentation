@@ -17,7 +17,7 @@ For the server usage, [see also her documentation](https://github.com/Kemenn/srv
 
 
 ### Deployement diagram
-![The deployement diagram](./french_deployment_diagram.png)
+![The deployement diagram](./docs/french_deployment_diagram.png)
 
 
 ### Client :
@@ -35,7 +35,7 @@ The client is made in 4 parts :
 The **main** file launches the parts one after the other (connection, shortcuts, message manager) by checking that they are correctly started. It also stops them, restarts them if necessary, and notifies the users. It is the conductor.
  
 #### Client use case diagram
-![The use case diagram](./french_use_case_diagram_client.png)
+![The use case diagram](./docs/french_use_case_diagram_client.png)
 
 
 ### Server :
@@ -52,7 +52,7 @@ The server is made in 3 parts:
 
 
 #### Server use case diagram
-![The use case diagram](./french_use_case_diagram_server.png)
+![The use case diagram](./docs/french_use_case_diagram_server.png)
 
 
 
@@ -96,4 +96,11 @@ There is 2 files for logs :
 
 This part describe the input/output message on server. The input messages come from a client, and output is for client ;)
 
-![sequence diagram to come...](./sequence_diagram.png)
+### Connection from client to kemenn server
+![sequence diagram of connection](./docs/sequence_diagram_connection.png)
+
+### Interaction when there is an alert
+The processing done by the server is not shown.
+
+In this diagram, Client1 has the username "theuser1", and the first name "Jean Dupont" ; Client2 has the username "theuser2", and the first name "Pierre Durand".
+![sequence diagram when alert](./docs/sequence_diagram_alert.png)
